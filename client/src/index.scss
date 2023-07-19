@@ -13,6 +13,7 @@ code {
 }
 
 // Breakpoints
+$breakpoint-tiny: 320px;
 $breakpoint-mobile: 480px;
 $breakpoint-tablet: 768px;
 $breakpoint-desktop: 1024px;
@@ -127,4 +128,43 @@ $transition-speed: 0.3s;
       background-color: $color-white;
     }
   }
+
+
+  @media (max-width: $breakpoint-mobile) {
+
+
+      .landing-top {
+        text-align: center;
+        padding-top: 30px;
+        .name {
+          font-size: 70px;
+          font-weight: $font-weight-bold
+        }
+  
+        .title {
+          font-size: 60px;
+        }
+      }
+
+      .landing-bottom {
+        width: 400px;
+        .fact-first {
+          font-size: 40px;
+          padding-bottom: 10px;
+        }
+
+        .fact-second {
+          font-size: 40px;
+          padding-bottom: 10px;
+        }
+      }
+
+      button {
+        padding-right: $spacing-xl;
+        padding-left: $spacing-xl;
+        padding-top: $spacing-sm;
+        padding-bottom: $spacing-sm;
+      }
+    }
+    
 }
